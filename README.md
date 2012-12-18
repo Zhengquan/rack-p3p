@@ -10,7 +10,7 @@ you're smart enough to figure it out :-)
 
 Add rack-p3p to your gemfile:
 
-    gem 'rack-p3p'
+    gem 'rack-p3p', :github => 'Zhengquan/rack-p3p'
 
 Add it to your middleware stack in config/application.rb:
 
