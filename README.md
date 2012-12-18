@@ -16,6 +16,11 @@ Add it to your middleware stack in config/application.rb:
 
     config.middleware.insert_before ActionDispatch::Session::CookieStore, Rack::P3p
 
+Using dalli_store:
+
+    require 'action_dispatch/middleware/session/dalli_store'
+    config.middleware.insert_before ActionDispatch::Session::DalliStore, Rack::P3p, 'CAO PSA OUR'
+
 Enjoy.
 
 Credits
